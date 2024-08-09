@@ -7,6 +7,7 @@ import { DataComponent } from './data/data.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { StoriesComponent } from './stories/stories.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StoriesComponent } from './stories/stories.component';
     DataComponent,
     NavbarComponent,
     PostComponent,
-    StoriesComponent
+    StoriesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
