@@ -8,6 +8,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { StoriesComponent } from './stories/stories.component';
 import { HomeComponent } from './home/home.component';
+import { PostHeaderComponent } from './posts/post-header/post-header.component';
+import { PostFooterComponent } from './posts/post-footer/post-footer.component';
+import { PostImageComponent } from './posts/post-image/post-image.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +21,15 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     PostComponent,
     StoriesComponent,
-    HomeComponent
+    HomeComponent,
+    PostHeaderComponent,
+    PostFooterComponent,
+    PostImageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

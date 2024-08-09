@@ -2,7 +2,11 @@
     <main id="main-content">
       <app-stories></app-stories>
       <div class="posts-container">
-      
+        <app-post 
+        *ngFor="let user of users" 
+        [username]="user.username" 
+        [userImageSource]="user.userImageSource"
+      ></app-post>
       </div>
     </main>
     <app-data id="infos">
